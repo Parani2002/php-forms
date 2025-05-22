@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get-data.php" method="post">
+        <fieldset>
+            <legend>Student Registration</legend>
+ <table>
+         <tr>
+            <th><label for="admissionno">Admission No:</label></th>
+            <td><input type="text" id="admissionno" name="admissionno"></td>
+         </tr>
+       <tr>
+            <th><label for="fathername">Father Name:</label></th>
+            <td><input type="text" id="fathername" name="fathername"></td>
+        </tr>
+        <tr>
+            <th><label for="studentname">Student Name:</label></th>
+            <td><input type="text" id="studentname" name="studentname"></td>
+        </tr>
+       <tr>
+        <th>Gender:</th>
+        <td><input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+    </td>
+       </tr>
+       <th><label for="grade">Grade:</label></th>
+          <td><select name="grade" id="grade">
+                <option value="10A">10A</option>
+                <option value="10B">10B</option>
+                <option value="10C">10C</option>
+          </select></td>
+</tr>
+<tr>
+    <th><label for="subjects">Subjects:</label></th>
+    <td>
+        <input type="checkbox" id="subjects" name="subjects[]" value="English">English<br>
+        
+        <input type="checkbox" id="subjects" name="subjects[]" value="Maths">Maths<br>
+        
+        <input type="checkbox" id="subjects" name="subjects[]" value="Science">Science<br>
+       
+    </td>
+</tr>
+<tr>
+    <th><label for="dob">Date of Birth</label></th>
+    <td><input type="date" id="dob" name="dob"></td>
+</tr>
+<tr>
+    <th><label for="house">House:</label></th>
+    <td> <select name="house">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+    </select></td>
+</tr>
+      <tr>
+        <th><label for="sports">Sports:</label></th>
+        <td>
+          <select name="sports[]" id="sports" multiple="multiple">
+                <option value="100m" id="sports" name="sports">100m race</option>
+                <option value="highjump" id="sports" name="sports">High Jump</option>
+                <option value="longjump" id="sports" name="sports">Long Jump</option>
+                 <option value="200m" id="sports" name="sports">200m race</option>
+                <option value="1500m" id="sports" name="sports">1500m race</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="address">Address:</label></th>
+        <td><textarea id="address" name="address"></textarea></td>
+      </tr>
+    </table>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+</body>
+</html>
